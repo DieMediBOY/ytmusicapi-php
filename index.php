@@ -1,9 +1,11 @@
 <?php
 // Asegúrate de incluir el autoload de Composer
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
+// Importa la clase YTMusic desde el espacio de nombres correcto
 use Ytmusicapi\YTMusic;
 
+// Verifica si se proporciona el parámetro videoId en la URL
 if (isset($_GET['videoId'])) {
     try {
         // Inicializa la clase YTMusic
